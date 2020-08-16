@@ -43,10 +43,6 @@ variable "owner" {
   description = "value of owner tag on EC2 instances"
 }
 
-variable "ttl" {
-  description = "time to live for HashiCorp Reaper"
-}
-
 variable "vault_cluster_version" {
   description = "Custom Version Tag for Upgrade Migrations"
 }

@@ -112,6 +112,11 @@ resource "aws_autoscaling_group" "vault" {
       value               = var.owner
       propagate_at_launch = true
     },
+    {
+      key                 = "ttl"
+      value               = var.ttl
+      propagate_at_launch = true
+    },
   ]
 
   lifecycle {
